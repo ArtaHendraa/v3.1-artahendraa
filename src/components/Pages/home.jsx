@@ -1,4 +1,9 @@
 /* eslint-disable react/no-unknown-property */
+import ProfileImg from "../../assets/profile-image/profile-image-1.jpg";
+import BarsMenu from "../../assets/svg/bars.svg";
+import CloseBtn from "../../assets/svg/closeBtn.svg";
+import AboutIcon from "../../assets/svg/about.svg";
+
 const HomePage = () => {
   return (
     <>
@@ -7,7 +12,7 @@ const HomePage = () => {
         <img
           className="absolute right-0 text-[#EEEEEE] cursor-pointer w-7 h-7"
           id="open-menu-btn"
-          src="/public/assets/svg/bars.svg"
+          src={BarsMenu}
           alt="menu"
         />
       </div>
@@ -280,7 +285,7 @@ const HomePage = () => {
                         width="100"
                         height="100"
                         className="duration-700 ease-in-out scale-100 rounded-full blur-0 grayscale-0 lg:hover:scale-125"
-                        src="../../assets/profile-image/profile-image-1.jpg"
+                        src={ProfileImg}
                         style={{ color: "transparent" }}
                       />
                     </div>
@@ -557,7 +562,10 @@ const HomePage = () => {
               </div>
             </div>
           </header>
-          {/* Desktop Menu Start */}
+          {/* Desktop Menu End */}
+          <main className="lg:max-w-[854px] transition-all duration-300 w-full lg:h-screen overflow-y-auto">
+            <div className="p-8 mb-5 lg:mt-0" data-aos="fade-up"></div>
+          </main>
         </div>
       </div>
     </>
