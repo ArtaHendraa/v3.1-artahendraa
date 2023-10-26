@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unknown-property */
-import ProfileImg from "../../assets/profile-image/profile-image-1.jpg";
-import BarsMenu from "../../assets/svg/bars.svg";
-import CloseBtn from "../../assets/svg/closeBtn.svg";
-import AboutIcon from "../../assets/svg/about.svg";
+// import ProfileImg from "../../assets/profile-image/profile-image-1.jpg";
+// import BarsMenu from "../../assets/icon/bars.svg";
+// import CloseBtn from "../../assets/icon/closeBtn.svg";
 
 const HomePage = () => {
   return (
@@ -12,7 +11,7 @@ const HomePage = () => {
         <img
           className="absolute right-0 text-[#EEEEEE] cursor-pointer w-7 h-7"
           id="open-menu-btn"
-          src={BarsMenu}
+          src="/public/icon/bars.svg"
           alt="menu"
         />
       </div>
@@ -30,7 +29,7 @@ const HomePage = () => {
                 width="100"
                 height="100"
                 className="duration-700 ease-in-out scale-100 rounded-full"
-                src="/public/assets/images/profile-image-2.jpg"
+                src="/public/profile-image/profile-image-1.jpg"
                 style={{ color: "transparent" }}
               />
             </div>
@@ -51,7 +50,7 @@ const HomePage = () => {
             <img
               className="font-extrabold w-7 h-7"
               id="close-menu-btn"
-              src="/public/assets/svg/closeBtn.svg"
+              src="/public/icon/closeBtn.svg"
               alt=""
             />
           </div>
@@ -285,7 +284,7 @@ const HomePage = () => {
                         width="100"
                         height="100"
                         className="duration-700 ease-in-out scale-100 rounded-full blur-0 grayscale-0 lg:hover:scale-125"
-                        src={ProfileImg}
+                        src="/public/profile-image/profile-image-1.jpg"
                         style={{ color: "transparent" }}
                       />
                     </div>
