@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Home Icon",
+    "target": "/",
+    "icon": "icon/home.svg",
+    "title": "Home"
+  },
+
+  {
+    "id": "Projects Icon",
+    "target": "/project",
+    "icon": "icon/project.svg",
+    "title": "Project"
+  },
+
+  {
+    "id": "Certificate Icon",
+    "target": "/certificate",
+    "icon": "icon/homeCerti.svg",
+    "title": "Certificate"
+  },
+
+  {
+    "id": "Education Icon",
+    "target": "/education",
+    "icon": "icon/education.svg",
+    "title": "Education"
+  },
+
+  {
+    "id": "About Icon",
+    "target": "/about",
+    "icon": "icon/about.svg",
+    "title": "About"
+  },
+
+  {
+    "id": "Get In Touch Icon",
+    "target": "/getInTouch",
+    "icon": "icon/git.svg",
+    "title": "Get In Touch"
+  },
+
+  {
+    "id": "Learn Icon",
+    "target": "/learn",
+    "icon": "icon/learn.svg",
+    "title": "Learn"
+  }
+]

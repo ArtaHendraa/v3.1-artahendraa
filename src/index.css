@@ -29,6 +29,7 @@
   .menu-not-active {
     @apply flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-[#393E46] hover:lg:rounded-lg lg:hover:scale-105 lg:transition-all lg:duration-300;
   }
+
   .menu-mobile-active {
     @apply flex items-center w-full gap-3 px-4 py-2 rounded-lg bg-[#393E46] md:py-4 md:rounded-xl;
   }
