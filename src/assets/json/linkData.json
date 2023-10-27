@@ -35,6 +35,13 @@
   },
 
   {
+    "id": "Blog Icon",
+    "target": "/blog",
+    "icon": "icon/blog.svg",
+    "title": "Blog"
+  },
+
+  {
     "id": "Get In Touch Icon",
     "target": "/getInTouch",
     "icon": "icon/git.svg",
