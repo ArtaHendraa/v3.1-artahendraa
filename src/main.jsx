@@ -26,6 +26,10 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
+    path: "/blog",
+    element: <HomePage />,
+  },
+  {
     path: "/getInTouch",
     element: <HomePage />,
   },
