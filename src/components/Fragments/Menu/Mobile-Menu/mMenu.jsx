@@ -12,12 +12,12 @@ const MobileMenu = () => {
 
     openMenuBtn.addEventListener("click", () => {
       humMenu.style.left = "0%";
-      document.body.style.overflow = "hidden";
+      // document.body.style.overflow = "hidden";
       humMenu.style.overflow = "scroll";
     });
 
     closeMenuBtn.addEventListener("click", () => {
-      document.body.style.overflow = "auto";
+      // document.body.style.overflow = "auto";
       humMenu.style.left = "-100%";
     });
   }, []);
