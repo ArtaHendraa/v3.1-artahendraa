@@ -9,18 +9,25 @@ const MobileMenu = () => {
     const openMenuBtn = document.getElementById("open-menu-btn");
     const closeMenuBtn = document.getElementById("close-menu-btn");
     const humMenu = document.getElementById("hum-menu");
-    const body = document.body;
 
-    openMenuBtn.addEventListener("click", () => {
+    const openMenu = () => {
       humMenu.style.left = "0%";
-      body.style.overflow = "hidden";
-      humMenu.style.overflow = "scroll";
-    });
+      document.body.style.overflow = "hidden";
+      // humMenu.style.overflow = "scroll";
+    };
 
-    closeMenuBtn.addEventListener("click", () => {
+    const closeMenu = () => {
       humMenu.style.left = "-100%";
-      body.style.overflow = "auto";
-    });
+      document.body.style.overflow = "auto";
+    };
+
+    openMenuBtn.addEventListener("click", openMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
+
+    return () => {
+      openMenuBtn.removeEventListener("click", openMenu);
+      closeMenuBtn.removeEventListener("click", closeMenu);
+    };
   }, []);
 
   return (
@@ -77,6 +84,7 @@ const MobileMenu = () => {
 
         <div className="flex flex-col lg:p-0 text-[#d1d5db] gap-1 my-2 mx-5">
           <LinkPage />
+          <LinkPage />
         </div>
 
         <div className="flex flex-col items-center justify-center">
@@ -92,8 +100,8 @@ const MobileMenu = () => {
             &copy;&nbsp;2023 with&nbsp;
             <span className="text-red-500 animate-pulse">❤</span>
             <span>&nbsp;by&nbsp;</span>
-            <span className="duration-300 cursor-wait hover:text-[#00ADB5]">
-              ArtaHendra
+            <span className="duration-300 cursor-wait hover:text-[#FFCF01]">
+              Arta Hendrawan
             </span>
           </span>
         </div>

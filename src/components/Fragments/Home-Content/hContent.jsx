@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import BorderMenu from "../../Elements/Border-menu/border";
 import HomeCardCerti from "../../Elements/Home-Certificate-Card/homeCardCerti";
@@ -17,7 +18,7 @@ const HomeContent = () => {
     <>
       <section className="space-y-2 bg-no-repeat bg-cover">
         <div className="flex items-center gap-2 text-2xl font-medium lg:text-3xl">
-          <h1 className="text-[#00ADB5] font-semibold">
+          <h1 className="text-[#FFCF01] font-semibold">
             {text}
             <span>
               <Cursor />

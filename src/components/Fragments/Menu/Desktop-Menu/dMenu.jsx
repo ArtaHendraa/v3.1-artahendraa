@@ -83,7 +83,7 @@ const DesktopMenu = () => {
                 &copy;&nbsp;2023 with&nbsp;
                 <span className="text-red-500 animate-pulse">❤</span>
                 <span>&nbsp;by&nbsp;</span>
-                <span className="duration-300 cursor-wait hover:text-[#00ADB5]">
+                <span className="duration-300 cursor-wait hover:text-[#FFCF01]">
                   ArtaHendra
                 </span>
               </span>

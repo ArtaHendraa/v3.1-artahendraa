@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./Pages/HomePage/home";
+import ProjectPage from "./Pages/ProjectPage/project";
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/project",
-    element: <HomePage />,
+    element: <ProjectPage />,
   },
   {
     path: "/certificate",
