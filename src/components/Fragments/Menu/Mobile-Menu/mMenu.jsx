@@ -25,7 +25,6 @@ const MobileMenu = () => {
 
   return (
     <>
-      {/* Mobile Menu Start */}
       <div className="relative z-[999] lg:hidden top-[1.625rem] right-5">
         <img
           className="absolute right-0 text-[#EEEEEE] cursor-pointer w-7 h-7"
@@ -76,7 +75,7 @@ const MobileMenu = () => {
         </div>
         <div className="mt-5 border-b border-gray-300"></div>
 
-        <div className="flex flex-col lg:p-0 text-[#d1d5db] gap-1 my-3 mx-5">
+        <div className="flex flex-col lg:p-0 text-[#d1d5db] gap-1 my-2 mx-5">
           <LinkPage />
         </div>
 
@@ -99,7 +98,6 @@ const MobileMenu = () => {
           </span>
         </div>
       </div>
-      {/*  Mobile Menu End  */}
     </>
   );
 };
