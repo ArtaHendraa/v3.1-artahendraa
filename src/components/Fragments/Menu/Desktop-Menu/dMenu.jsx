@@ -58,13 +58,13 @@ const DesktopMenu = () => {
               {/* </div> */}
             </div>
 
-            <BorderMenu />
+            <BorderMenu display="hidden xl:block" />
 
             <div className="hidden lg:flex flex-col space-y-1 lg:p-0 text-[#d1d5db]">
               <LinkPage />
             </div>
 
-            <BorderMenu />
+            <BorderMenu display="hidden xl:block" />
 
             {/* 
             <div className="flex-col hidden space-y-1 lg:flex">

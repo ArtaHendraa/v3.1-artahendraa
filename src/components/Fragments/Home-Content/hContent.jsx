@@ -36,7 +36,7 @@ const HomeContent = () => {
           </p>
         </div>
       </section>
-      <BorderMenu />
+      <BorderMenu display="block" />
       <section className="space-y-6 ">
         <div className="space-y-2">
           <div className="flex items-center gap-1 text-xl font-medium text-neutral-300">
@@ -103,7 +103,7 @@ const HomeContent = () => {
           />
         </CertiLayout>
 
-        <BorderMenu />
+        <BorderMenu display="block" />
       </section>
       <section className="space-y-6">
         <div className="space-y-2">
