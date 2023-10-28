@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import SNSLink from "../../../Elements/SNS-Link/snsLink";
 
@@ -10,24 +10,16 @@ const MobileMenu = () => {
     const closeMenuBtn = document.getElementById("close-menu-btn");
     const humMenu = document.getElementById("hum-menu");
 
-    const openMenu = () => {
+    openMenuBtn.addEventListener("click", () => {
       humMenu.style.left = "0%";
       document.body.style.overflow = "hidden";
-      // humMenu.style.overflow = "scroll";
-    };
+      humMenu.style.overflow = "scroll";
+    });
 
-    const closeMenu = () => {
-      humMenu.style.left = "-100%";
+    closeMenuBtn.addEventListener("click", () => {
       document.body.style.overflow = "auto";
-    };
-
-    openMenuBtn.addEventListener("click", openMenu);
-    closeMenuBtn.addEventListener("click", closeMenu);
-
-    return () => {
-      openMenuBtn.removeEventListener("click", openMenu);
-      closeMenuBtn.removeEventListener("click", closeMenu);
-    };
+      humMenu.style.left = "-100%";
+    });
   }, []);
 
   return (
@@ -40,9 +32,8 @@ const MobileMenu = () => {
           alt="menu"
         />
       </div>
-
       <div
-        className="fixed z-[9999] bg-[#222831] transition-all ease-in-out duration-[350ms] left-[-100%] w-full h-full lg:hidden"
+        className="fixed z-[9999] bg-[#222831] transition-all ease-in-out duration-[350ms] left-[-100%] w-full h-full lg:hidden "
         id="hum-menu"
       >
         <div className="flex items-center justify-between gap-4 mt-5 ml-5">
@@ -83,6 +74,7 @@ const MobileMenu = () => {
         <div className="mt-5 border-b border-gray-300"></div>
 
         <div className="flex flex-col lg:p-0 text-[#d1d5db] gap-1 my-2 mx-5">
+          <LinkPage />
           <LinkPage />
           <LinkPage />
         </div>

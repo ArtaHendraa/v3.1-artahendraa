@@ -6,7 +6,7 @@ const LinkPage = () => {
   return (
     <>
       {linkData.map((link) => (
-        <Link to={link.target}>
+        <Link to={link.target} key={link.id}>
           <div
             className={
               location.pathname === link.target

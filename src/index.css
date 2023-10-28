@@ -31,6 +31,16 @@
     @apply flex items-center text-base gap-2 px-4 py-2 rounded-lg hover:bg-[#393E46] hover:lg:rounded-lg lg:hover:scale-105 lg:transition-all lg:duration-300;
   }
 
+  .menu-open {
+    left: 0%;
+    overflow-y: auto;
+  }
+
+  .menu-closed {
+    left: -100%;
+    overflow-y: hidden;
+  }
+
   .social-media-hover {
     @apply transition duration-300 text-neutral-400  hover:text-neutral-300 lg:hover:scale-110;
   }

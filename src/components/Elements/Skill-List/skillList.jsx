@@ -5,7 +5,7 @@ const SkillList = () => {
   return (
     <>
       {skillsData.map((skillICon) => (
-        <div className="w-8">
+        <div className="w-8" key={skillICon.id}>
           <div className="relative inline-block">
             <div className="relative">
               <div dangerouslySetInnerHTML={{ __html: skillICon.svg }}></div>

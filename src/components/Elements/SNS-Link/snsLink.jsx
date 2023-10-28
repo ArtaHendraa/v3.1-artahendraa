@@ -5,7 +5,7 @@ const SNSLink = () => {
   return (
     <>
       {snsLinkData.map((icon) => (
-        <a target="_blank" rel="noreferrer" href={icon.target}>
+        <a target="_blank" rel="noreferrer" href={icon.target} key={icon.id}>
           <div className="relative inline-block">
             <div className="relative">
               <div className="social-media-hover">
