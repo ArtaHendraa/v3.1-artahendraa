@@ -1,40 +1,53 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unknown-property */
-import { useEffect } from "react";
+
+import React, { useState, useEffect } from "react";
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import SNSLink from "../../../Elements/SNS-Link/snsLink";
 
 const MobileMenu = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   useEffect(() => {
     const openMenuBtn = document.getElementById("open-menu-btn");
     const closeMenuBtn = document.getElementById("close-menu-btn");
-    const humMenu = document.getElementById("hum-menu");
 
-    openMenuBtn.addEventListener("click", () => {
-      humMenu.style.left = "0%";
-      // document.body.style.overflow = "hidden";
-      humMenu.style.overflow = "scroll";
-    });
+    openMenuBtn.addEventListener("click", openMenu);
+    closeMenuBtn.addEventListener("click", closeMenu);
 
-    closeMenuBtn.addEventListener("click", () => {
-      // document.body.style.overflow = "auto";
-      humMenu.style.left = "-100%";
-    });
+    return () => {
+      openMenuBtn.removeEventListener("click", openMenu);
+      closeMenuBtn.removeEventListener("click", closeMenu);
+    };
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
+  }, [isMenuOpen]);
 
   return (
     <>
-      <div className="relative z-[999] lg:hidden top-[1.625rem] right-5">
+      <div className="absolute xl:hidden z-30 top-[1.625rem] right-5">
         <img
-          className="absolute right-0 text-[#EEEEEE] cursor-pointer w-7 h-7"
+          className="text-[#EEEEEE] cursor-pointer w-7 h-7"
           id="open-menu-btn"
           src="icon/bars.svg"
           alt="menu"
+          onClick={openMenu}
         />
       </div>
       <div
-        className="fixed z-[9999] bg-[#222831] transition-all ease-in-out duration-[350ms] left-[-100%] w-full h-full lg:hidden "
-        id="hum-menu"
+        className={`fixed top-0 left-0 w-full h-full bg-[#222831] transition-transform duration-[350ms] transform ${
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+        } lg:hidden z-40`}
       >
         <div className="flex items-center justify-between gap-4 mt-5 ml-5">
           <div className="flex items-center gap-4">
@@ -51,48 +64,42 @@ const MobileMenu = () => {
             </div>
             <div className="flex items-center gap-2 mt-1">
               <a href="#">
-                <h1 className="flex-grow text-lg font-semibold">
-                  Arta Hendrawan
-                </h1>
+                <h1 className="text-lg font-semibold">Arta Hendrawan</h1>
               </a>
               <div className="relative inline-block">
-                <div className="relative">
-                  <img src="icon/verified.svg" alt="icon" />
-                </div>
+                <img src="icon/verified.svg" alt="icon" />
               </div>
             </div>
           </div>
-          <div className="z-[999] cursor-pointer mr-5">
+          <div className="mr-5 cursor-pointer">
             <img
               className="font-extrabold w-7 h-7"
               id="close-menu-btn"
               src="icon/closeBtn.svg"
               alt="icon"
+              onClick={closeMenu}
             />
           </div>
         </div>
         <div className="mt-5 border-b border-gray-300"></div>
 
-        <div className="flex flex-col lg:p-0 text-[#d1d5db] gap-1 my-2 mx-5">
-          <LinkPage />
-          <LinkPage />
+        <div className="flex flex-col text-[#d1d5db] gap-1 my-2 mx-5 lg:p-0">
           <LinkPage />
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <div className="w-[90%]  border-b border-gray-500"></div>
+          <div className="w-5/6 mt-5 border-b border-gray-500"></div>
           <div className="flex flex-row items-center justify-around gap-8 mt-5 md:gap-14">
             <SNSLink />
           </div>
-          <div className="w-[90%] mt-4 border-b border-gray-500"></div>
+          <div className="w-5/6 mt-4 border-b border-gray-500"></div>
         </div>
 
         <div className="flex items-center justify-center mt-2 text-sm text-neutral-500">
           <span>
-            &copy;&nbsp;2023 with&nbsp;
-            <span className="text-red-500 animate-pulse">❤</span>
-            <span>&nbsp;by&nbsp;</span>
-            <span className="duration-300 cursor-wait hover:text-[#FFCF01]">
+            &copy; 2023 with{" "}
+            <span className="text-red-500 animate-pulse">❤</span> by{" "}
+            <span className="cursor-wait hover:text-[#FFCF01] duration-300">
               Arta Hendrawan
             </span>
           </span>
