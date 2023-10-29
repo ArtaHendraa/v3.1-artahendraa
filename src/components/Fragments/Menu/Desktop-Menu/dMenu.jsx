@@ -2,6 +2,7 @@
 // import React from "react";
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import BorderMenu from "../../../Elements/Border-menu/border";
+import Copyright from "../../../Elements/Copyright/copyright";
 // import SNSLink from "../../../Elements/SNS-Link/snsLink";
 const DesktopMenu = () => {
   return (
@@ -79,14 +80,7 @@ const DesktopMenu = () => {
             {/* <BorderMenu /> */}
 
             <div className="items-center justify-center hidden gap-1 py-1 text-xs w-[230px] xl:flex text-[#d1d5db]">
-              <span>
-                &copy;&nbsp;2023 with&nbsp;
-                <span className="text-red-500 animate-pulse">❤</span>
-                <span>&nbsp;by&nbsp;</span>
-                <span className="duration-300 cursor-wait hover:text-[#FFCF01]">
-                  ArtaHendra
-                </span>
-              </span>
+              <Copyright />
             </div>
           </div>
         </div>

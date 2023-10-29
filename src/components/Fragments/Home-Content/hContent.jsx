@@ -48,7 +48,7 @@ const HomeContent = () => {
             <p className="capitalize text-neutral-400">my certificate</p>
             <Link
               to="/certificate"
-              className="flex items-center gap-1 transition-all duration-300 hover:gap-2 text-neutral-500 hover:text-neutral-300"
+              className="flex items-center gap-1 transition-all duration-300 hover:gap-2 text-neutral-400 hover:text-neutral-300"
             >
               <span>See More</span>
               <svg

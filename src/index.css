@@ -23,7 +23,7 @@
 
   /* Menu Style */
   .menu-active {
-    @apply flex items-center text-base gap-2 px-4 py-2 rounded-lg bg-[#393E46] opacity-100 text-[#FFFFFF];
+    @apply flex items-center text-base gap-2 px-4 py-2 rounded-lg bg-[#393E46] opacity-100 text-white;
   }
 
   .menu-not-active {

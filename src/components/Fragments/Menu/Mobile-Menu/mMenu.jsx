@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from "react";
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import SNSLink from "../../../Elements/SNS-Link/snsLink";
+import Copyright from "../../../Elements/Copyright/copyright";
 
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,17 +95,11 @@ const MobileMenu = () => {
           <div className="flex flex-row items-center justify-around gap-8 mt-5 md:gap-14">
             <SNSLink />
           </div>
-          <div className="w-5/6 mt-3 border-t border-gray-500"></div>
+          <div className="w-5/6 mt-3 border-b border-gray-500"></div>
         </div>
 
-        <div className="flex items-center justify-center mt-1 text-sm text-neutral-500">
-          <span>
-            &copy; 2023 with{" "}
-            <span className="text-red-500 animate-pulse">❤</span> by{" "}
-            <span className="cursor-wait hover:text-[#FFCF01] duration-300">
-              Arta Hendrawan
-            </span>
-          </span>
+        <div className="flex items-center justify-center mt-1 text-xs ">
+          <Copyright />
         </div>
       </div>
     </>
