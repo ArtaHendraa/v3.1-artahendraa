@@ -46,7 +46,9 @@ const MobileMenu = () => {
       </div>
       <div
         className={`fixed top-0 left-0 w-full h-full bg-[#222831] transition-transform duration-[350ms] transform ${
-          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          isMenuOpen
+            ? "translate-x-0 overflow-scroll"
+            : "-translate-x-full overflow-hidden"
         } lg:hidden z-40`}
       >
         <div className="flex items-center justify-between gap-4 mt-5 ml-5">
@@ -88,14 +90,14 @@ const MobileMenu = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <div className="w-5/6 mt-5 border-b border-gray-500"></div>
+          <div className="w-5/6 border-b border-gray-500"></div>
           <div className="flex flex-row items-center justify-around gap-8 mt-5 md:gap-14">
             <SNSLink />
           </div>
-          <div className="w-5/6 mt-4 border-b border-gray-500"></div>
+          <div className="w-5/6 mt-3 border-t border-gray-500"></div>
         </div>
 
-        <div className="flex items-center justify-center mt-2 text-sm text-neutral-500">
+        <div className="flex items-center justify-center mt-1 text-sm text-neutral-500">
           <span>
             &copy; 2023 with{" "}
             <span className="text-red-500 animate-pulse">❤</span> by{" "}
