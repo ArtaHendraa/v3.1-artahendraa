@@ -1,8 +1,9 @@
 /* eslint-disable react/jsx-key */
 import linkData from "../../../assets/json/linkData.json";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const LinkPage = () => {
+  const location = useLocation();
   return (
     <>
       {linkData.map((link) => (

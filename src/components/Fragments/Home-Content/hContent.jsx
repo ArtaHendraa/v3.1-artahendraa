@@ -42,7 +42,7 @@ const HomeContent = () => {
         <div className="space-y-2">
           <div className="flex items-center gap-1 text-xl font-medium text-neutral-300">
             <img className="mt-3" src="icon/certi.svg" alt="icon" />
-            <h2 className="mt-3 capitalize">certificate</h2>
+            <h2 className="mt-3 text-white capitalize">certificate</h2>
           </div>
           <div className="flex flex-col justify-between gap-2 lg:flex-row lg:items-center text-neutral-400">
             <p className="capitalize text-neutral-400">my certificate</p>
@@ -87,12 +87,12 @@ const HomeContent = () => {
             target="https://www.dicoding.com/certificates/MRZMQRMR3PYQ"
           />
           <HomeCardCerti
-            image="certificate-image/freeCodeCamp.webp"
-            name="freeCodeCamp"
+            image="certificate-image/Dicoding.webp"
+            name="Dicoding"
             title="JavaScript"
-            date="on progress"
-            alt="freeCodeCamp"
-            target="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+            date="7 September 2023"
+            alt="Dicoding"
+            target="https://www.dicoding.com/certificates/GRX52G73VX0M"
           />
           <HomeCardCerti
             image="certificate-image/freeCodeCamp.webp"
@@ -106,17 +106,14 @@ const HomeContent = () => {
 
         <BorderMenu display="block" />
       </section>
-      <section className="space-y-6">
-        <div className="space-y-2">
+      <section className="space-y-4">
+        <div className="space-y-1">
           <div className="flex items-center gap-2 text-xl font-medium text-neutral-300">
             <img className="mt-6" src="icon/skill.svg" alt="icon" />
-            <h2 className="mt-6 capitalize">skills</h2>
+            <h2 className="mt-6 text-white capitalize">skills</h2>
           </div>
-          <div className="flex flex-col justify-between gap-2 lg:flex-row lg:items-center text-neutral-400">
-            <p className="ml-2 capitalize text-neutral-400 md:ml-0">
-              my skills.
-            </p>
-          </div>
+          {/* <div className="flex flex-col justify-between gap-2 lg:flex-row lg:items-center text-neutral-400"></div> */}
+          <p className="capitalize text-neutral-400 md:ml-0">my skills</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-5 md:justify-start">

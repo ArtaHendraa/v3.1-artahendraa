@@ -23,9 +23,9 @@ const DesktopMenu = () => {
                     style={{ color: "transparent" }}
                   />
                 </div>
-                <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                <div className="flex items-center gap-1 mt-1 lg:mt-4">
                   <div>
-                    <h1 className="flex-grow text-lg font-semibold lg:text-lg">
+                    <h1 className="flex-grow text-lg font-semibold">
                       Arta Hendrawan
                     </h1>
                   </div>

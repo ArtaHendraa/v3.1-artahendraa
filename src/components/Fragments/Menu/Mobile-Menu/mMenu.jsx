@@ -65,7 +65,7 @@ const MobileMenu = () => {
                 style={{ color: "transparent" }}
               />
             </div>
-            <div className="flex items-center gap-2 mt-1">
+            <div className="flex items-center gap-1 mt-1">
               <a href="#">
                 <h1 className="text-lg font-semibold">Arta Hendrawan</h1>
               </a>

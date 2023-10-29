@@ -8,9 +8,9 @@
 
   {
     "id": "Projects Icon",
-    "target": "/project",
+    "target": "/projects",
     "icon": "icon/project.svg",
-    "title": "Project"
+    "title": "Projects"
   },
 
   {
