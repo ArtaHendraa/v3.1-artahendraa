@@ -2,11 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import MobileMenu from "./components/Fragments/Menu/Mobile-Menu/mMenu";
+import MainLayout from "./components/Layouts/Main-Layout/main";
+import DesktopMenu from "./components/Fragments/Menu/Desktop-Menu/dMenu";
+import ContentLayout from "./components/Layouts/Content-Layout/content";
+
+//* Content Pages Start
 import HomePage from "./Pages/HomePage/home";
 import ProjectPage from "./Pages/ProjectPage/project";
 import CertificatePage from "./Pages/CertificatePage/certificate";
+import ErrorPage from "./Pages/ErrorPage/error";
+//* Content Pages End
 
 const router = createBrowserRouter([
+  {
+    errorElement: <ErrorPage />,
+  },
   {
     path: "/",
     element: <HomePage />,
@@ -19,30 +31,18 @@ const router = createBrowserRouter([
     path: "/certificate",
     element: <CertificatePage />,
   },
-  {
-    path: "/education",
-    element: <HomePage />,
-  },
-  {
-    path: "/about",
-    element: <HomePage />,
-  },
-  {
-    path: "/blog",
-    element: <HomePage />,
-  },
-  {
-    path: "/getInTouch",
-    element: <HomePage />,
-  },
-  {
-    path: "/learn",
-    element: <HomePage />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <>
+    <MainLayout>
+      <MobileMenu />
+      <DesktopMenu />
+      <ContentLayout>
+        <React.StrictMode>
+          <RouterProvider router={router} />
+        </React.StrictMode>
+      </ContentLayout>
+    </MainLayout>
+  </>
 );

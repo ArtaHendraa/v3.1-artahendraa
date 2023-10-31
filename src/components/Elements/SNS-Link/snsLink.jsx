@@ -12,7 +12,7 @@ const SNSLink = () => {
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
-                  stroke-width="0"
+                  strokeWidth="0"
                   viewBox={icon.viewBox}
                   height="20"
                   width="20"

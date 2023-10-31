@@ -3,7 +3,8 @@
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import BorderMenu from "../../../Elements/Border-menu/border";
 import Copyright from "../../../Elements/Copyright/copyright";
-// import SNSLink from "../../../Elements/SNS-Link/snsLink";
+import { BrowserRouter as Router } from "react-router-dom";
+
 const DesktopMenu = () => {
   return (
     <>
@@ -44,40 +45,17 @@ const DesktopMenu = () => {
                   @ArtaHendraa
                 </a>
               </div>
-              {/* <div className="items-center justify-between hidden w-full mt-4 xl:flex">
-                <div className="items-center gap-2 xl:flex">
-                  <div className="relative w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
-                  <div className="absolute w-2 h-2 bg-green-400 rounded-full left-[2px] animate-ping"></div>
-                  <div className="absolute w-2 h-2 bg-green-400 rounded-full left-[2px]"></div>
-                  <span className="w-full text-sm text-neutral-400">
-                    Student&nbsp;|&nbsp;Programmer
-                  </span>
-                </div> */}
-              {/* clock  */}
-              {/* <Clock /> */}
-              {/* clock  */}
-              {/* </div> */}
             </div>
 
             <BorderMenu display="hidden xl:block" />
 
             <div className="hidden lg:flex flex-col space-y-1 lg:p-0 text-[#d1d5db]">
-              <LinkPage />
+              <Router>
+                <LinkPage />
+              </Router>
             </div>
 
             <BorderMenu display="hidden xl:block" />
-
-            {/* 
-            <div className="flex-col hidden space-y-1 lg:flex">
-              <div className="mt-1 mb-1 text-sm text-neutral-400">
-                Let`s Connect
-              </div>
-              <div className="flex justify-around px-5 pt-2 lg:justify-between">
-                <SNSLink />
-              </div>
-            </div> */}
-
-            {/* <BorderMenu /> */}
 
             <div className="items-center justify-center hidden gap-1 py-1 text-xs w-[230px] xl:flex text-[#d1d5db]">
               <Copyright />
@@ -88,53 +66,5 @@ const DesktopMenu = () => {
     </>
   );
 };
-
-// const Clock = () => {
-//   const [hours, setHours] = React.useState(0);
-//   const [minutes, setMinutes] = React.useState(0);
-//   const [ampm, setAmpm] = React.useState("");
-
-//   function updateClock() {
-//     const currentTime = new Date();
-//     const currentHours = currentTime.getHours();
-//     const ampm = currentHours >= 12 ? "PM" : "AM";
-
-//     // conversion to 12 hours
-//     const convertedHours = currentHours % 12;
-//     const convertedHoursString = convertedHours
-//       ? convertedHours < 10
-//         ? "0" + convertedHours
-//         : convertedHours
-//       : 12;
-
-//     // always show 2 digits for hours and minutes
-//     let hours =
-//       (currentTime.getHours() < 10 ? "0" : "") + currentTime.getHours();
-//     const minutes =
-//       (currentTime.getMinutes() < 10 ? "0" : "") + currentTime.getMinutes();
-
-//     // add condition to ensure that hours is always 2 digits
-//     hours = convertedHours ? convertedHoursString : 12;
-
-//     // set hours to state
-//     setHours(hours);
-//     setMinutes(minutes);
-//     setAmpm(ampm);
-//   }
-
-//   React.useEffect(() => {
-//     updateClock();
-//     const interval = setInterval(updateClock, 1000);
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <div className="text-sm font-semibold">
-//       <span>
-//         {hours}&nbsp;:&nbsp;{minutes}&nbsp;{ampm}
-//       </span>
-//     </div>
-//   );
-// };
 
 export default DesktopMenu;
