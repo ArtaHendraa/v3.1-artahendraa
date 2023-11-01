@@ -5,7 +5,6 @@ import React, { useState, useEffect } from "react";
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import SNSLink from "../../../Elements/SNS-Link/snsLink";
 import Copyright from "../../../Elements/Copyright/copyright";
-import { BrowserRouter as Router } from "react-router-dom";
 
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,9 +87,7 @@ const MobileMenu = () => {
         <div className="mt-5 border-b border-gray-300"></div>
 
         <div className="flex flex-col gap-1 mx-5 my-2 lg:p-0">
-          <Router>
-            <LinkPage />
-          </Router>
+          <LinkPage />
         </div>
 
         <div className="flex flex-col items-center justify-center">

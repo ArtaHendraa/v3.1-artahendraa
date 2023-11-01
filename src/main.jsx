@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import MobileMenu from "./components/Fragments/Menu/Mobile-Menu/mMenu";
 import MainLayout from "./components/Layouts/Main-Layout/main";
@@ -33,16 +34,18 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <>
-    <MainLayout>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <MainLayout>
+    <Router>
       <MobileMenu />
       <DesktopMenu />
-      <ContentLayout>
-        <React.StrictMode>
-          <RouterProvider router={router} />
-        </React.StrictMode>
-      </ContentLayout>
-    </MainLayout>
-  </>
+    </Router>
+
+    <ContentLayout>
+      <React.StrictMode>
+        <RouterProvider router={router} />
+      </React.StrictMode>
+    </ContentLayout>
+  </MainLayout>
 );
