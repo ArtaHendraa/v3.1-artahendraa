@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
 import BorderMenu from "../../../Elements/Border-menu/border";
 import Copyright from "../../../Elements/Copyright/copyright";
@@ -14,13 +13,13 @@ const DesktopMenu = () => {
 
           <BorderMenu display="hidden xl:block" />
 
-          <div className="hidden lg:flex flex-col space-y-1 lg:p-0 text-[#d1d5db]">
+          <div className="flex-col hidden p-0 space-y-1 lg:flex">
             <LinkPage />
           </div>
 
           <BorderMenu display="hidden xl:block" />
 
-          <div className="items-center justify-center hidden gap-1 py-1 text-xs w-[230px] xl:flex text-[#d1d5db]">
+          <div className="items-center justify-center hidden gap-1 py-1 text-xs w-[230px] xl:flex">
             <Copyright />
           </div>
         </div>

@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 import linkData from "../../../assets/json/linkData.json";
 import { Link, useLocation } from "react-router-dom";
 

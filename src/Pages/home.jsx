@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import BorderMenu from "../../components/Elements/Border-menu/border";
-import HomeCardCerti from "../../components/Elements/Home-Certificate-Card/homeCardCerti";
-import CertiLayout from "../../components/Layouts/Certi-Layout/certiLayout";
+import BorderMenu from "../components/Elements/Border-menu/border";
+import HomeCardCerti from "../components/Elements/Home-Certificate-Card/homeCardCerti";
+import CertiLayout from "../components/Layouts/Certi-Layout/certiLayout";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import SkillList from "../../components/Elements/Skill-List/skillList";
+import SkillList from "../components/Elements/Skill-List/skillList";
 
 const Introduce = () => {
   const [text] = useTypewriter({

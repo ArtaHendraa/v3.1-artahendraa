@@ -1,4 +1,4 @@
-import PageHeader from "../../components/Elements/Page-Header/pageHeader";
+import PageHeader from "../components/Elements/Page-Header/pageHeader";
 
 const CertificatePage = () => {
   return (

@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unknown-property */
 
 import React, { useState, useEffect } from "react";
 import LinkPage from "../../../Elements/Link-Menu/linkMenu";
@@ -38,7 +37,7 @@ const MobileMenu = () => {
     <>
       <div className="absolute xl:hidden z-30 top-[1.625rem] right-5">
         <img
-          className="text-[#EEEEEE] cursor-pointer w-7 h-7"
+          className="cursor-pointer w-7 h-7"
           id="open-menu-btn"
           src="icon/bars.svg"
           alt="menu"
@@ -74,7 +73,7 @@ const MobileMenu = () => {
               </div>
             </div>
           </div>
-          <div className="mr-5 cursor-pointer">
+          <div className="mr-[1.063rem] cursor-pointer">
             <img
               className="font-extrabold w-7 h-7"
               id="close-menu-btn"
@@ -92,7 +91,7 @@ const MobileMenu = () => {
 
         <div className="flex flex-col items-center justify-center">
           <div className="w-5/6 border-b border-gray-500"></div>
-          <div className="flex flex-row items-center justify-around gap-8 mt-5 md:gap-14">
+          <div className="flex flex-row items-center justify-around gap-6 mt-5 md:gap-14">
             <SNSLink />
           </div>
           <div className="w-5/6 mt-3 border-b border-gray-500"></div>
