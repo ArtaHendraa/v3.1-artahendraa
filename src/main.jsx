@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
+import WebLayouts from "./components/Layouts/Web-Layouts/WebLayouts";
 
 //* Content Pages Start
 import HomePage from "./Pages/home";
@@ -14,11 +14,9 @@ import ErrorPage from "./Pages/error";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <WebLayouts />,
+    errorElement: <ErrorPage />,
     children: [
-      {
-        errorElement: <ErrorPage />,
-      },
       {
         path: "/",
         element: <HomePage />,
