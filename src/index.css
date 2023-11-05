@@ -51,7 +51,7 @@
   }
 
   .project-card-title-hover {
-    @apply text-lg transition-all duration-300 cursor-pointer  text-neutral-300 hover:text-[#FFCF01];
+    @apply text-lg transition-all duration-300 cursor-pointer  text-white hover:text-[#FFCF01];
   }
 
   .project-description {
@@ -59,11 +59,11 @@
   }
 
   .banner {
-    @apply absolute top-0 right-0 bg-[#FFCF01] text-[#EEEEEE] text-[13px] font-medium py-1 px-2 rounded-bl-xl rounded-tr-xl z-[2];
+    @apply absolute top-0 right-0 bg-[#FFCF01] text-[#222831] text-[13px]  py-1 px-2 rounded-bl-xl font-semibold rounded-tr-xl z-[2];
   }
 
   .project-image-style {
-    @apply object-cover object-left h-48 duration-700 ease-in-out scale-100 blur-0 grayscale-0 rounded-t-xl;
+    @apply object-cover object-center h-48 duration-700 ease-in-out scale-100 blur-0 grayscale-0 rounded-t-xl;
   }
   /* Project Page Style */
 

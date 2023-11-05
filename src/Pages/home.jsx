@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import BorderMenu from "../components/Elements/Border-menu/border";
-import HomeCardCerti from "../components/Elements/Home-Certificate-Card/homeCardCerti";
+import CardCerti from "../components/Elements/Home-Certificate-Card/CardCerti";
 import CertiLayout from "../components/Layouts/Certi-Layout/certiLayout";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import SkillList from "../components/Elements/Skill-List/skillList";
@@ -73,38 +73,7 @@ const DisplayCertificate = () => {
       </div>
 
       <CertiLayout>
-        <HomeCardCerti
-          image="certificate-image/Dicoding.webp"
-          name="Dicoding"
-          title="Visualisasi Data"
-          date="28 Juli 2023"
-          alt="dicoding"
-          target="https://www.dicoding.com/certificates/81P23MK0NXOY"
-        />
-        <HomeCardCerti
-          image="certificate-image/Dicoding.webp"
-          name="Dicoding"
-          title="Programming Logic"
-          date="24 Juli 2023"
-          alt="dicoding"
-          target="https://www.dicoding.com/certificates/MRZMQRMR3PYQ"
-        />
-        <HomeCardCerti
-          image="certificate-image/Dicoding.webp"
-          name="Dicoding"
-          title="JavaScript"
-          date="7 September 2023"
-          alt="Dicoding"
-          target="https://www.dicoding.com/certificates/GRX52G73VX0M"
-        />
-        <HomeCardCerti
-          image="certificate-image/freeCodeCamp.webp"
-          name="freeCodeCamp"
-          title="Relational Database"
-          date="on progress"
-          alt="freeCodeCamp"
-          target="https://www.freecodecamp.org/learn/relational-database/"
-        />
+        <CardCerti selectCerti={[1, 2, 3, 6]} />
       </CertiLayout>
 
       <BorderMenu display="block" />
@@ -113,6 +82,17 @@ const DisplayCertificate = () => {
 };
 
 function DisplaySkill() {
+  const selectedIconIds = [
+    "html",
+    "css",
+    "js",
+    "bootstrap",
+    "nodeJS",
+    "tailwind",
+    "figma",
+    "materialUI",
+    "react",
+  ];
   return (
     <section className="space-y-4">
       <div className="space-y-1">
@@ -124,7 +104,7 @@ function DisplaySkill() {
       </div>
 
       <div className="flex flex-wrap justify-center gap-5 md:justify-start">
-        <SkillList />
+        <SkillList size="w-8" selectedIconIds={selectedIconIds} />
       </div>
     </section>
   );

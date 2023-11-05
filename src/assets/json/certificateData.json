@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "image": "certificate-image/Dicoding.webp",
+    "name": "Dicoding",
+    "title": "Visualisasi Data",
+    "date": "28 Juli 2023",
+    "alt": "Dicoding",
+    "target": "https://www.dicoding.com/certificates/81P23MK0NXOY"
+  },
+  {
+    "id": 2,
+    "image": "certificate-image/Dicoding.webp",
+    "name": "Dicoding",
+    "title": "Programming Logic",
+    "date": "24 Juli 2023",
+    "alt": "Dicoding",
+    "target": "https://www.dicoding.com/certificates/MRZMQRMR3PYQ"
+  },
+  {
+    "id": 3,
+    "image": "certificate-image/Dicoding.webp",
+    "name": "Dicoding",
+    "title": "JavaScript",
+    "date": "7 September 2023",
+    "alt": "Dicoding",
+    "target": "https://www.dicoding.com/certificates/GRX52G73VX0M"
+  },
+  {
+    "id": 4,
+    "image": "certificate-image/Dicoding.webp",
+    "name": "Dicoding",
+    "title": "Pemrograman Web",
+    "date": "27 September 2023",
+    "alt": "Dicoding",
+    "target": "https://www.dicoding.com/certificates/0LZ0Q6Q1KZ65"
+  },
+  {
+    "id": 5,
+    "image": "certificate-image/Dicoding.webp",
+    "name": "Dicoding",
+    "title": "Dasar pengembang...",
+    "date": "27 September 2023",
+    "alt": "Dicoding",
+    "target": "https://www.dicoding.com/certificates/07Z68LNOYXQR"
+  },
+  {
+    "id": 6,
+    "image": "certificate-image/freeCodeCamp.webp",
+    "name": "freeCodeCamp",
+    "title": "Relational Database",
+    "date": "on progress",
+    "alt": "freeCodeCamp",
+    "target": "https://www.freecodecamp.org/learn/relational-database/"
+  },
+  {
+    "id": 7,
+    "image": "certificate-image/freeCodeCamp.webp",
+    "name": "freeCodeCamp",
+    "title": "FrontEnd Dev...",
+    "date": "on progress",
+    "alt": "freeCodeCamp",
+    "target": "https://www.freecodecamp.org/learn/relational-database/"
+  }
+]
