@@ -21,7 +21,7 @@ const ProjectPage = () => {
         <Card
           target="https://artahendraa.github.io/"
           title="v3-artahendraa"
-          banner="visible"
+          banner="hidden"
           image="project-image/v3-artahendraa.webp"
           description="v3 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
           skillIcon={["html", "js", "tailwind"]}
