@@ -38,7 +38,7 @@ const Identity = () => {
           width="85"
           height="85"
           className="duration-700 ease-in-out scale-100 rounded-full blur-0 grayscale-0 lg:hover:scale-125"
-          src="profile-image/profile-image-1.jpg"
+          src="profile-image/profile-image-1.webp"
           style={{ color: "transparent" }}
         />
       </div>

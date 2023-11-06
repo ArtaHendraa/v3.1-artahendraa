@@ -60,7 +60,7 @@ const MobileMenu = () => {
                 width="100"
                 height="100"
                 className="duration-700 ease-in-out scale-100 rounded-full"
-                src="profile-image/profile-image-1.jpg"
+                src="profile-image/profile-image-1.webp"
                 style={{ color: "transparent" }}
               />
             </div>
@@ -83,7 +83,7 @@ const MobileMenu = () => {
             />
           </div>
         </div>
-        <div className="mt-5 border-b border-gray-300"></div>
+        <div className="mt-5 border-b border-gray-500"></div>
 
         <div className="flex flex-col gap-1 mx-5 my-2 lg:p-0">
           <LinkPage />
