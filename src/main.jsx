@@ -9,6 +9,7 @@ import HomePage from "./Pages/home";
 import ProjectPage from "./Pages/project";
 import CertificatePage from "./Pages/certificate";
 import ErrorPage from "./Pages/error";
+import EduPage from "./Pages/education";
 //* Content Pages End
 
 const router = createBrowserRouter([
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "certificate",
         element: <CertificatePage />,
+      },
+      {
+        path: "education",
+        element: <EduPage />,
       },
     ],
   },
