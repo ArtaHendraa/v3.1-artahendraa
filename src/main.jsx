@@ -10,6 +10,7 @@ import ProjectPage from "./Pages/project";
 import CertificatePage from "./Pages/certificate";
 import ErrorPage from "./Pages/error";
 import EduPage from "./Pages/education";
+import AboutPage from "./Pages/about";
 //* Content Pages End
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "education",
         element: <EduPage />,
+      },
+      {
+        path: "about",
+        element: <AboutPage />,
       },
     ],
   },

@@ -4,7 +4,11 @@ import Timeline from "../components/Elements/Timeline/timeline";
 const EduPage = () => {
   return (
     <>
-      <PageHeader title="Education" description="Riwayat pendidikan saya" />
+      <PageHeader
+        title="Education"
+        description="Riwayat pendidikan saya"
+        mb="mb-6"
+      />
 
       <ol className="relative ml-4 border-l border-gray-600">
         <Timeline

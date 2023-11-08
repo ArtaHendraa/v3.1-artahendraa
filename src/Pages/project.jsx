@@ -7,6 +7,7 @@ const ProjectPage = () => {
       <PageHeader
         title="Projects"
         description="Semua Project yang sudah saya kerjakan"
+        mb="mb-6"
       />
       <section className="grid grid-cols-1 gap-5 pt-2 md:grid-cols-2">
         <Card
@@ -14,7 +15,7 @@ const ProjectPage = () => {
           title="v3.1-artahendraa"
           banner="visible"
           image="project-image/v3.1-artahendraa.webp"
-          description="v3.1 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
+          description="v3.1 dari artahendraa, Personal website dengan JavaScript, Tailwind, React"
           skillIcon={["js", "tailwind", "react"]}
         />
 
@@ -23,7 +24,7 @@ const ProjectPage = () => {
           title="v3-artahendraa"
           banner="hidden"
           image="project-image/v3-artahendraa.webp"
-          description="v3 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
+          description="v3 dari artahendraa, Personal website dengan HTML, Tailwind, JavaScript"
           skillIcon={["html", "js", "tailwind"]}
         />
 
