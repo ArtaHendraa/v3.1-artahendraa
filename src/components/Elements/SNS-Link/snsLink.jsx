@@ -4,25 +4,26 @@ import snsLinkData from "../../../assets/json/snsLinkData.json";
 const SNSLink = () => {
   return (
     <>
-      {snsLinkData.map((icon) => (
-        <a target="_blank" rel="noreferrer" href={icon.target} key={icon.id}>
-          <div className="relative inline-block">
-            <div className="relative">
-              <div className="social-media-hover">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox={icon.viewBox}
-                  height="20"
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d={icon.path}></path>
-                </svg>
-              </div>
-            </div>
-          </div>
+      {snsLinkData.map((social) => (
+        <a
+          target="_blank"
+          rel="noreferrer"
+          className={`gap-2 flex items-center justify-start py-3 px-3 w-full rounded-lg hover:scale-[102%] duration-300 ${social.bg}`}
+          href={social.target}
+          key={social.id}
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            strokeWidth="0"
+            viewBox={social.viewBox}
+            height="20"
+            width="20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d={social.path}></path>
+          </svg>
+          <span>{social.id}</span>
         </a>
       ))}
     </>

@@ -90,15 +90,9 @@ const MobileMenu = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center">
-          <div className="w-5/6 border-b border-gray-500"></div>
-          <div className="flex flex-row items-center justify-around gap-3 mt-5 md:gap-14">
-            <SNSLink />
+          <div className="flex items-center justify-center w-5/6 text-xs border-t border-gray-500 ">
+            <Copyright />
           </div>
-          <div className="w-5/6 mt-3 border-b border-gray-500"></div>
-        </div>
-
-        <div className="flex items-center justify-center mt-1 text-xs ">
-          <Copyright />
         </div>
       </div>
     </>

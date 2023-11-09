@@ -11,6 +11,8 @@ import CertificatePage from "./Pages/certificate";
 import ErrorPage from "./Pages/error";
 import EduPage from "./Pages/education";
 import AboutPage from "./Pages/about";
+import BlogPage from "./Pages/blog";
+import GetInTouchPage from "./Pages/getInTouch";
 //* Content Pages End
 
 const router = createBrowserRouter([
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <AboutPage />,
+      },
+      {
+        path: "blog",
+        element: <BlogPage />,
+      },
+      {
+        path: "getInTouch",
+        element: <GetInTouchPage />,
       },
     ],
   },
