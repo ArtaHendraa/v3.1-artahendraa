@@ -10,7 +10,7 @@ const SNSLink = () => {
           rel="noreferrer"
           href={social.target}
           key={social.id}
-          className={`gap-2 flex items-center justify-start py-3 px-3 w-full rounded-lg hover:scale-[102%] duration-300 ${social.bg} `}
+          className={`gap-2 flex items-center justify-start py-3 px-3 w-full rounded-lg hover:scale-[102%] duration-300  bg-[${social.bg}]`}
         >
           <svg
             stroke="currentColor"
