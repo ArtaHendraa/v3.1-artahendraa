@@ -16,7 +16,7 @@ const ProjectPage = () => {
           banner="visible"
           image="project-image/v3.1-artahendraa.webp"
           description="v3.1 dari artahendraa, Personal website dengan JavaScript, Tailwind, React"
-          skillIcon={["js", "tailwind", "react"]}
+          skillIcon={["js", "tailwind", "react", "vite"]}
         />
 
         <Card

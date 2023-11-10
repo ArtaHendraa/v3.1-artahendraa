@@ -51,7 +51,7 @@
   }
 
   .project-card-title-hover {
-    @apply text-lg transition-all duration-300 cursor-pointer  text-white hover:text-[#FFCF01];
+    @apply text-lg transition-all duration-300 cursor-pointer text-white hover:text-[#FFCF01];
   }
 
   .project-description {
