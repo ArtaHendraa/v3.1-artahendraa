@@ -76,16 +76,16 @@
     @apply text-base font-semibold text-white md:text-lg;
   }
 
-  .cllick-effect {
+  .click-effect {
     box-shadow: 0 0 0 0;
   }
 
-  .cllick-effect:hover {
-    box-shadow: 7px 8px 0 0 #266669;
+  .click-effect:hover {
+    box-shadow: 7px 8px 0 0 #b29000;
     transform: translateY(-4px);
   }
 
-  .cllick-effect:active {
+  .click-effect:active {
     transform: translateY(4px);
     box-shadow: 0 0 0 0;
   }

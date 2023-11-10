@@ -157,7 +157,7 @@ const GetInTouchPage = () => {
           <button
             type="submit"
             disabled={loading} // Use the loading state to disable the button
-            className={`cursor-pointer bg-[#00ADB5] text-[#EEEEEE] font-semibold h-[50px] w-full flex items-center justify-center mt-5 rounded-sm tracking-widest click-effect duration-75 ${
+            className={`cursor-pointer bg-[#FFCF01] text-[#393E46] font-semibold h-[50px] w-full flex items-center justify-center mt-5 rounded-sm tracking-widest click-effect duration-75 ${
               loading ? "opacity-50 pointer-events-none" : ""
             }`}
           >
