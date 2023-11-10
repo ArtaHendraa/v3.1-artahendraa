@@ -7,7 +7,7 @@ const CertificatePage = () => {
       <PageHeader
         title="Certificate"
         description="Sertifikat yang saya miliki"
-        mb="mb-6"
+        customClass="mb-6"
       />
       <div className="grid gap-4 md:grid-cols-2">
         <CardCerti selectCerti={[1, 2, 3, 4, 5, 6, 7]} />

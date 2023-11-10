@@ -6,7 +6,7 @@ const AboutPage = () => {
       <PageHeader
         title="About Me"
         description="Informasi tentang saya"
-        mb="mb-2"
+        customClass="mb-2"
       />
       <div>
         <p className="mb-10 md:leading-loose text-neutral-300">
@@ -21,7 +21,7 @@ const AboutPage = () => {
       <PageHeader
         title="My Devices"
         description="Devices yang saya gunakan saat ini"
-        mb="mb-2"
+        customClass="mb-2"
       />
       <div className="mt-5">
         <div className="flex items-center gap-2 mb-1">

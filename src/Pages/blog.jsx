@@ -6,7 +6,7 @@ const BlogPage = () => {
       <PageHeader
         title="Blog"
         description="Jelajahi berbagai informasi seputar technology, anime dan, film"
-        mb="mb-6"
+        customClass="mb-6"
       />
     </>
   );

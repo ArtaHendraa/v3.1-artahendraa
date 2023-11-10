@@ -7,7 +7,7 @@ const ProjectPage = () => {
       <PageHeader
         title="Projects"
         description="Semua Project yang sudah saya kerjakan"
-        mb="mb-6"
+        customClass="mb-6"
       />
       <section className="grid grid-cols-1 gap-5 pt-2 md:grid-cols-2">
         <Card

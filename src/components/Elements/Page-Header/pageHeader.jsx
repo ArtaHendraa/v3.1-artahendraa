@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 const PageHeader = (props) => {
-  const { title, description, mb } = props;
+  const { title, description, customClass } = props;
   return (
     <>
       <section className="space-y-2 bg-no-repeat bg-cover">
@@ -23,7 +23,7 @@ const PageHeader = (props) => {
         </div>
       </section>
       <div
-        className={`my-4 mt-2 ${mb} border-t border-dashed border-neutral-400`}
+        className={`my-4 mt-2 ${customClass} border-t border-dashed border-neutral-400`}
       ></div>
     </>
   );
