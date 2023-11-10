@@ -8,9 +8,9 @@ const SNSLink = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          className={`gap-2 flex items-center justify-start py-3 px-3 w-full rounded-lg hover:scale-[102%] duration-300 ${social.bg}`}
           href={social.target}
           key={social.id}
+          className={`gap-2 flex items-center justify-start py-3 px-3 w-full rounded-lg hover:scale-[102%] duration-300 ${social.bg} `}
         >
           <svg
             stroke="currentColor"
