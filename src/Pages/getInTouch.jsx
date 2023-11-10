@@ -55,7 +55,7 @@ const GetInTouchPage = () => {
         <SNSLink />
       </div>
 
-      <PageHeader title="Or Send Me A Message" />
+      <PageHeader title="Or send me a message" />
 
       <div className={`alert ${alertVisible ? "" : "hidden"}`}>
         <div
