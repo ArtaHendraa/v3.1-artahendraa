@@ -13,6 +13,7 @@ import EduPage from "./Pages/education";
 import AboutPage from "./Pages/about";
 import BlogPage from "./Pages/blog";
 import GetInTouchPage from "./Pages/getInTouch";
+import LearnPage from "./Pages/learn";
 //* Content Pages End
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "getInTouch",
         element: <GetInTouchPage />,
+      },
+      {
+        path: "learn",
+        element: <LearnPage />,
       },
     ],
   },
