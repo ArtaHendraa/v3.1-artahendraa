@@ -83,15 +83,15 @@ const DisplayCertificate = () => {
 
 function DisplaySkill() {
   const selectedIconIds = [
-    "html",
-    "css",
-    "js",
-    "bootstrap",
-    "nodeJS",
-    "tailwind",
-    "figma",
-    "materialUI",
-    "react",
+    "HTML",
+    "CSS",
+    "javaScript",
+    "Bootstrap",
+    "Node JS",
+    "Tailwind",
+    "Figma",
+    "Material UI",
+    "React JS",
   ];
   return (
     <section className="space-y-4">

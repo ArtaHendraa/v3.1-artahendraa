@@ -16,7 +16,7 @@ const ProjectPage = () => {
           banner="visible"
           image="project-image/v3.1-artahendraa.webp"
           description="v3.1 dari artahendraa, Personal website dengan JavaScript, Tailwind, React"
-          skillIcon={["js", "tailwind", "react", "vite"]}
+          skillIcon={["javaScript", "Tailwind", "React JS", "Vite"]}
         />
 
         <Card
@@ -25,7 +25,7 @@ const ProjectPage = () => {
           banner="hidden"
           image="project-image/v3-artahendraa.webp"
           description="v3 dari artahendraa, Personal website dengan HTML, Tailwind, JavaScript"
-          skillIcon={["html", "js", "tailwind"]}
+          skillIcon={["HTML", "javaScript", "Tailwind"]}
         />
 
         <Card
@@ -34,7 +34,7 @@ const ProjectPage = () => {
           banner="hidden"
           image="project-image/v2-artahendraa.webp"
           description="v2 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
-          skillIcon={["html", "css", "js"]}
+          skillIcon={["HTML", "CSS", "javaScript"]}
         />
 
         <Card
@@ -43,7 +43,7 @@ const ProjectPage = () => {
           banner="hidden"
           image="project-image/v1-artahendraa.webp"
           description="v1 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
-          skillIcon={["html", "css", "js"]}
+          skillIcon={["HTML", "CSS", "javaScript"]}
         />
       </section>
     </>

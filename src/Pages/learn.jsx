@@ -1,23 +1,49 @@
 import PageHeader from "../components/Elements/Page-Header/pageHeader";
-import CurrentlyLearning from "../components/Elements/learn/currentlyLearning";
-import LearnJourney from "../components/Elements/learn/learnJourney";
+import LearnList from "../components/Elements/Learn-List/learnList";
 
 const LearnPage = () => {
+  const iconJourney = [
+    "Java",
+    "Kotlin",
+    "Dart",
+    "Flutter",
+    "Photoshop",
+    "Illustrator",
+    "Bootstrap",
+    "Ubuntu OS",
+  ];
+
+  const iconLearn = [
+    "javaScript",
+    "Tailwind",
+    "Node JS",
+    "React JS",
+    "Typescript",
+    "Next JS",
+    "Figma",
+    "PostgreSQL",
+    "mySQL",
+  ];
+
   return (
     <>
       <PageHeader
         title="Learning Journey"
-        description="Hal hal yang pernah saya pelajari"
+        description="Hal yang pernah saya pelajari, namun tidak saya lanjutkan"
         customClass="mb-6"
       />
-      <LearnJourney />
+      <div className="grid grid-cols-2 gap-3 mb-10 md:grid-cols-3">
+        <LearnList size="w-6 h-6" selectedIconIds={`${iconJourney}`} />
+      </div>
 
       <PageHeader
         title="Currently Learning"
         description="Fokus belajar saya saat ini"
         customClass="mb-6"
       />
-      <CurrentlyLearning />
+      <div className="grid grid-cols-2 gap-3 mb-10 md:grid-cols-3">
+        <LearnList size="w-6 h-6" selectedIconIds={`${iconLearn}`} />
+      </div>
     </>
   );
 };
