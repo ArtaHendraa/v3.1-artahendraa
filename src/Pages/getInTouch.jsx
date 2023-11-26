@@ -138,7 +138,7 @@ const GetInTouchPage = () => {
         <div className="flex w-full h-16 mx-auto mt-5 bg-transparent">
           <input
             className="w-full px-3 tracking-wider bg-transparent border-b border-gray-500 focus:outline-none focus:border-gray-300 input"
-            type="text"
+            type="email"
             required
             name="email"
             autoComplete="off"
