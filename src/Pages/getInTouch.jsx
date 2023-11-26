@@ -59,7 +59,7 @@ const GetInTouchPage = () => {
 
       <div className={`alert ${alertVisible ? "" : "hidden"}`}>
         <div
-          className="flex items-center p-4 mt-5 text-white rounded-lg bg-[#00ADB5]"
+          className="flex items-center p-4 mt-5 text-white bg-green-400 rounded-lg"
           role="alert"
         >
           <svg
@@ -77,7 +77,7 @@ const GetInTouchPage = () => {
           </div>
           <button
             type="button"
-            className="close ml-auto -mx-1.5 -my-1.5 bg-[#00ADB5] text-white rounded-lg focus:ring-2 p-1.5 hover:bg-[#266669] duration-200 inline-flex items-center justify-center h-8 w-8"
+            className="close ml-auto -mx-1.5 -my-1.5  text-white rounded-lg focus:ring-2 p-1.5 hover:bg-green-500 duration-200 inline-flex items-center justify-center h-8 w-8"
             data-dismiss-target="#alert-1"
             aria-label="Close"
             onClick={closeAlert}
@@ -156,7 +156,7 @@ const GetInTouchPage = () => {
         <div id="send-button">
           <button
             type="submit"
-            disabled={loading} // Use the loading state to disable the button
+            disabled={loading}
             className={`cursor-pointer bg-[#FFCF01] text-[#393E46] font-semibold h-[50px] w-full flex items-center justify-center mt-5 rounded-sm tracking-widest click-effect duration-75 ${
               loading ? "opacity-50 pointer-events-none" : ""
             }`}
@@ -166,7 +166,7 @@ const GetInTouchPage = () => {
                 <svg
                   aria-hidden="true"
                   role="status"
-                  className="inline w-4 h-4 mr-3 text-white animate-spin"
+                  className="inline w-4 h-4 mr-3 text-[#393E46] animate-spin"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
