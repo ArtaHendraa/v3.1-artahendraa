@@ -23,6 +23,7 @@ const LearnPage = () => {
     "Figma",
     "PostgreSQL",
     "mySQL",
+    "Redux",
   ];
 
   return (
