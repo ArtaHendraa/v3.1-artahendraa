@@ -45,6 +45,15 @@ const ProjectPage = () => {
           description="v1 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
           skillIcon={["HTML", "CSS", "javaScript"]}
         />
+
+        <Card
+          target="https://novelkuid.vercel.app/"
+          title="Novelku ID"
+          banner="hidden"
+          image="project-image/novelku.webp"
+          description="Website baca LN (tanpa API, data chapter di ambil dari website lain, jadi ini hanya layout)"
+          skillIcon={["Tailwind", "React JS", "Vite"]}
+        />
       </section>
     </>
   );
