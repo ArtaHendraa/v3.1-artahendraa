@@ -2,26 +2,13 @@ import { Link } from "react-router-dom";
 import BorderMenu from "../components/Elements/Border-menu/border";
 import CardCerti from "../components/Elements/Home-Certificate-Card/CardCerti";
 import CertiLayout from "../components/Layouts/Certi-Layout/certiLayout";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
 import SkillList from "../components/Elements/Skill-List/skillList";
 
 const Introduce = () => {
-  const [text] = useTypewriter({
-    words: ["Hai, Saya Arta", "Hi, I'm Arta", "こんにちは、アラタです"],
-    loop: {},
-    typeSpeed: 90,
-    deleteSpeed: 50,
-  });
-
   return (
     <section className="space-y-2 bg-no-repeat bg-cover">
       <div className="flex items-center gap-2 text-2xl font-medium lg:text-3xl">
-        <h1 className="text-[#FFCF01] font-semibold">
-          {text}
-          <span>
-            <Cursor />
-          </span>
-        </h1>
+        <h1 className="text-[#FFCF01] font-semibold">Hi, I&apos;m Arta</h1>
       </div>
       <div className="space-y-4">
         <ul className="flex flex-col gap-1 ml-5 list-disc lg:flex-row lg:gap-9 text-neutral-400">
@@ -29,7 +16,7 @@ const Introduce = () => {
           <li>Based in Denpasar, Bali, Indonesia</li>
         </ul>
         <p className="leading-[1.8] md:leading-loose text-neutral-300">
-          Siswa SMA yang bersemangat dan berminat dalam dunia teknologi,
+          Mahasiswa yang bersemangat dan berminat dalam dunia teknologi,
           khususnya dalam bidang pemrograman, saat ini tengah fokus mempelajari
           berbagai aspek teknologi Web.
         </p>

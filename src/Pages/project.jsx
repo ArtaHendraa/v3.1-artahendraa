@@ -11,21 +11,21 @@ const ProjectPage = () => {
       />
       <section className="grid grid-cols-1 gap-5 pt-2 md:grid-cols-2">
         <Card
-          target="https://artahendraa.vercel.app/"
-          title="v3.1-artahendraa"
+          target="https://norime.vercel.app/"
+          title="norime"
           banner="visible"
-          image="project-image/v3.1-artahendraa.webp"
-          description="v3.1 dari artahendraa, Personal website dengan JavaScript, Tailwind, React"
+          image="project-image/norime.png"
+          description="Website yang menampilkan data anime terbaru, yang diambil dari jikan.api"
           skillIcon={["javaScript", "Tailwind", "React JS", "Vite"]}
         />
 
         <Card
-          target="https://artahendraa.github.io/"
-          title="v3-artahendraa"
-          banner="hidden"
-          image="project-image/v3-artahendraa.webp"
-          description="v3 dari artahendraa, Personal website dengan HTML, Tailwind, JavaScript"
-          skillIcon={["HTML", "javaScript", "Tailwind"]}
+          target="https://github.com/orgs/dezumedia/repositories"
+          title="Dezu Media"
+          banner="visible"
+          image="project-image/dezu-media.png"
+          description="Website portal berita yang dibuat dengan next js, dan strapi sebagai headless cms"
+          skillIcon={["Next JS", "Tailwind"]}
         />
 
         <Card
@@ -44,15 +44,6 @@ const ProjectPage = () => {
           image="project-image/v1-artahendraa.webp"
           description="v1 dari artahendraa, Personal website dengan HTML, CSS, JavaScript"
           skillIcon={["HTML", "CSS", "javaScript"]}
-        />
-
-        <Card
-          target="https://novelkuid.vercel.app/"
-          title="Novelku ID"
-          banner="hidden"
-          image="project-image/novelku.webp"
-          description="Website baca LN (tanpa API, data chapter di ambil dari website lain, jadi ini hanya layout)"
-          skillIcon={["Tailwind", "React JS", "Vite"]}
         />
       </section>
     </>
