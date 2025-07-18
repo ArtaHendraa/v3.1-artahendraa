@@ -11,8 +11,8 @@ const AboutPage = () => {
       <div>
         <p className="mb-10 md:leading-loose text-neutral-300">
           Hai, nama saya Arta Hendrawan. Terima kasih telah mengunjungi website
-          saya. Saat ini, saya berusia 17 tahun dan saya seorang siswa kelas 3
-          SMA. Hobi saya adalah membuat program, dan sesekali saya menikmati
+          saya. Saat ini, saya berusia 19 tahun dan saya seorang Mahasiswa
+          semester 2. Hobi saya adalah menggambar, dan sesekali saya menikmati
           menonton film, anime, serta membaca manga. Ini adalah perkenalan
           singkat tentang diri saya 👋🏻.
         </p>
