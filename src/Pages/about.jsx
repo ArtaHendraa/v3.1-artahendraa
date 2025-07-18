@@ -41,7 +41,7 @@ const AboutPage = () => {
             <rect x="5" y="6" width="14" height="10" rx="1" />
           </svg>
           <p className="leading-[1.8] md:leading-loose text-neutral-300">
-            ASUS Vivobook 14 M413DA
+            Macbook Air m3
           </p>
         </div>
 
